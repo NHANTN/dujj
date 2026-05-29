@@ -305,7 +305,6 @@
       background: white;
       border-radius: 24px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-      overflow: hidden;
     }
 
     .tab-nav {
@@ -554,6 +553,92 @@
       line-height: 1.6;
     }
 
+    /* Projects Layout */
+    .projects-layout {
+      display: flex;
+      gap: 32px;
+      align-items: flex-start;
+    }
+
+    .projects-sidebar {
+      position: sticky;
+      top: 140px;
+      flex-shrink: 0;
+      width: 200px;
+      background: #f8fafc;
+      border-radius: 16px;
+      padding: 20px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .projects-sidebar-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .projects-sidebar-title i {
+      color: #3b82f6;
+    }
+
+    .sidebar-link {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 12px;
+      border-radius: 10px;
+      text-decoration: none;
+      color: #64748b;
+      font-size: 14px;
+      font-weight: 500;
+      transition: all 0.2s ease;
+      margin-bottom: 4px;
+    }
+
+    .sidebar-link:last-child {
+      margin-bottom: 0;
+    }
+
+    .sidebar-link:hover {
+      background: #fff;
+      color: #1e293b;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    }
+
+    .sidebar-link .link-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #cbd5e1;
+      flex-shrink: 0;
+      transition: all 0.2s ease;
+    }
+
+    .sidebar-link:hover .link-dot {
+      background: #3b82f6;
+    }
+
+    .sidebar-link .link-count {
+      margin-left: auto;
+      font-size: 11px;
+      color: #94a3b8;
+      background: #e2e8f0;
+      padding: 2px 8px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    .projects-main {
+      flex: 1;
+      min-width: 0;
+    }
+
     /* Company Project Groups */
     .company-project-group {
       margin-bottom: 48px;
@@ -601,8 +686,8 @@
 
     /* Projects Grid */
     .projects-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      display: flex;
+      flex-direction: column;
       gap: 24px;
     }
 
@@ -613,35 +698,61 @@
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
       transition: all 0.3s ease;
       border: 1px solid #e2e8f0;
+      position: relative;
+    }
+
+    .project-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background: linear-gradient(180deg, #3b82f6, #6366f1);
     }
 
     .project-card:hover {
-      transform: translateY(-5px);
       box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
       border-color: #3b82f6;
     }
 
     .project-header {
-      background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(99, 102, 241, 0.1));
-      padding: 32px;
-      position: relative;
+      padding: 28px 32px 20px 32px;
+      border-bottom: 1px solid #f1f5f9;
     }
 
     .project-title {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 700;
-      margin-bottom: 12px;
+      margin-bottom: 8px;
       color: #1e293b;
     }
 
     .project-period {
-      font-size: 14px;
+      font-size: 13px;
       color: #64748b;
       font-weight: 500;
     }
 
     .project-content {
-      padding: 32px;
+      padding: 24px 32px 32px;
+    }
+
+    .project-section-label {
+      font-size: 13px;
+      font-weight: 700;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 12px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .project-section-label i {
+      color: #3b82f6;
+      font-size: 14px;
     }
 
     .project-description {
@@ -649,6 +760,52 @@
       margin-bottom: 24px;
       font-size: 15px;
       line-height: 1.7;
+    }
+
+    .project-responsibilities {
+      background: #f8fafc;
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin-bottom: 24px;
+      border: 1px solid #e2e8f0;
+    }
+
+    .project-responsibilities .resp-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      padding: 12px 0;
+      border-bottom: 1px solid #e2e8f0;
+    }
+
+    .project-responsibilities .resp-item:last-child {
+      border-bottom: none;
+      padding-bottom: 0;
+    }
+
+    .project-responsibilities .resp-item:first-child {
+      padding-top: 0;
+    }
+
+    .resp-bullet {
+      width: 20px;
+      height: 20px;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 11px;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .resp-text {
+      font-size: 14px;
+      color: #475569;
+      line-height: 1.6;
     }
 
     .tech-tags {
@@ -661,9 +818,9 @@
     .tech-tag {
       background: #eff6ff;
       color: #3b82f6;
-      padding: 8px 16px;
+      padding: 6px 14px;
       border-radius: 20px;
-      font-size: 13px;
+      font-size: 12px;
       font-weight: 600;
       border: 1px solid #dbeafe;
     }
@@ -672,7 +829,17 @@
       background: #f0fdf4;
       border: 1px solid #bbf7d0;
       border-radius: 12px;
-      padding: 20px;
+      padding: 20px 24px;
+    }
+
+    .project-results h4 {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 14px;
+      color: #16a34a;
+      display: flex;
+      align-items: center;
+      gap: 8px;
     }
 
     .project-results h4 {
@@ -702,6 +869,61 @@
       content: '✓';
       color: #16a34a;
       font-weight: bold;
+    }
+
+    /* Education */
+    .education-card {
+      background: #f8fafc;
+      border-radius: 20px;
+      padding: 32px;
+      border: 1px solid #e2e8f0;
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      margin-bottom: 48px;
+      transition: all 0.3s ease;
+    }
+
+    .education-card:hover {
+      border-color: #3b82f6;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    }
+
+    .education-icon {
+      width: 64px;
+      height: 64px;
+      background: linear-gradient(135deg, #3b82f6, #6366f1);
+      border-radius: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      color: #fff;
+      flex-shrink: 0;
+    }
+
+    .education-info h3 {
+      font-size: 20px;
+      font-weight: 700;
+      color: #1e293b;
+      margin-bottom: 6px;
+    }
+
+    .education-major {
+      font-size: 15px;
+      color: #3b82f6;
+      font-weight: 600;
+      margin-bottom: 4px;
+    }
+
+    .education-detail {
+      font-size: 14px;
+      color: #64748b;
+    }
+
+    .education-detail span {
+      margin: 0 8px;
+      color: #cbd5e1;
     }
 
     /* Certifications */
@@ -858,6 +1080,29 @@
         padding: 40px 24px;
       }
 
+      .projects-layout {
+        flex-direction: column;
+      }
+
+      .projects-sidebar {
+        position: static;
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        padding: 16px;
+        overflow-x: auto;
+      }
+
+      .projects-sidebar-title {
+        display: none;
+      }
+
+      .sidebar-link {
+        white-space: nowrap;
+        flex-shrink: 0;
+        margin-bottom: 0;
+      }
+
       .skills-grid,
       .projects-grid {
         grid-template-columns: 1fr;
@@ -881,8 +1126,8 @@
         <button class="tab-btn active" onclick="showTab('home')">
           <i class="fas fa-home"></i> 首页
         </button>
-        <button class="tab-btn" onclick="showTab('skills')">
-          <i class="fas fa-cogs"></i> 专业技能
+        <button class="tab-btn" onclick="showTab('education')">
+          <i class="fas fa-graduation-cap"></i> 教育 & 认证
         </button>
         <button class="tab-btn" onclick="showTab('experience')">
           <i class="fas fa-briefcase"></i> 工作经历
@@ -890,8 +1135,8 @@
         <button class="tab-btn" onclick="showTab('projects')">
           <i class="fas fa-project-diagram"></i> 项目经验
         </button>
-        <button class="tab-btn" onclick="showTab('certifications')">
-          <i class="fas fa-certificate"></i> 认证资质
+        <button class="tab-btn" onclick="showTab('skills')">
+          <i class="fas fa-cogs"></i> 专业技能
         </button>
         <button class="tab-btn" onclick="showTab('contact')">
           <i class="fas fa-envelope"></i> 联系方式
@@ -961,69 +1206,6 @@
             </div>
           </section>
         </div>
-        <!-- Skills Tab -->
-        <div id="skills" class="tab-pane">
-          <h2 class="section-title">专业技能</h2>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-icon">
-                  <i class="fas fa-cloud"></i>
-                </div>
-                <h3 class="skill-title">云平台与容器化</h3>
-              </div>
-              <ul class="skill-list">
-                <li>Kubernetes / Docker 容器编排与部署</li>
-                <li>VMware / 华为云私有云架构设计</li>
-                <li>混合云基础设施规划与管理</li>
-                <li>云原生应用架构设计与实施</li>
-              </ul>
-            </div>
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-icon">
-                  <i class="fas fa-server"></i>
-                </div>
-                <h3 class="skill-title">系统与网络</h3>
-              </div>
-              <ul class="skill-list">
-                <li>RedHat / CentOS / Windows Server 运维</li>
-                <li>基于 OSI / TCP/IP 的网络架构设计</li>
-                <li>企业级安全体系构建</li>
-                <li>高可用与负载均衡方案设计</li>
-              </ul>
-            </div>
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-icon">
-                  <i class="fas fa-code"></i>
-                </div>
-                <h3 class="skill-title">开发与自动化</h3>
-              </div>
-              <ul class="skill-list">
-                <li>PowerShell / Shell / Python 脚本开发</li>
-                <li>Ansible / Puppet / Rundeck 自动化部署</li>
-                <li>Git 版本管理与 CI/CD 流程</li>
-                <li>基础设施即代码（IaC）实践</li>
-              </ul>
-            </div>
-            <div class="skill-card">
-              <div class="skill-header">
-                <div class="skill-icon">
-                  <i class="fas fa-shield-alt"></i>
-                </div>
-                <h3 class="skill-title">安全与合规</h3>
-              </div>
-              <ul class="skill-list">
-                <li>企业级安全标准实施</li>
-                <li>身份与访问管理（IAM）方案</li>
-                <li>隐私法规合规（中国 GDPR）</li>
-                <li>安全监控与应急响应</li>
-              </ul>
-            </div>
-          </div>
-        </div>
-
         <!-- Experience Tab -->
         <div id="experience" class="tab-pane">
           <h2 class="section-title">工作经历</h2>
@@ -1124,7 +1306,29 @@
         <div id="projects" class="tab-pane">
           <h2 class="section-title">项目经验</h2>
 
-          <div class="company-project-group">
+          <div class="projects-layout">
+            <div class="projects-sidebar">
+              <div class="projects-sidebar-title"><i class="fas fa-list"></i> 目录</div>
+              <a class="sidebar-link" href="#group-decathlon">
+                <span class="link-dot"></span>
+                迪卡侬
+                <span class="link-count">3</span>
+              </a>
+              <a class="sidebar-link" href="#group-huaxun">
+                <span class="link-dot"></span>
+                华讯网络
+                <span class="link-count">1</span>
+              </a>
+              <a class="sidebar-link" href="#group-yaxin">
+                <span class="link-dot"></span>
+                亚信科技
+                <span class="link-count">1</span>
+              </a>
+            </div>
+
+            <div class="projects-main">
+
+          <div class="company-project-group" id="group-decathlon">
             <div class="company-header">
               <div class="company-header-icon"><i class="fas fa-store"></i></div>
               <div class="company-header-info">
@@ -1140,8 +1344,27 @@
                 </div>
                 <div class="project-content">
                   <p class="project-description">
-                    为优化现有Windows收银方案硬件功耗高、体积大、价格高昂、扩展性弱、运维管理难等痛点，协同本地供应商定制轻量化安卓收银方案，打造标准化、高集成度的新一代门店收银硬件体系，在降低硬件采购及运维成本的同时，提供满足业务需求的方案以响应中国零售行业高速发展。
+                    为优化现有Windows收银方案硬件功耗高、体积大、价格高昂、扩展性弱、运维管理难等痛点，协同本地供应商定制轻量化安卓收银方案，打造标准化、高集成度的新一代门店收银硬件体系。
                   </p>
+                  <div class="project-section-label"><i class="fas fa-tasks"></i> 主要职责</div>
+                  <div class="project-responsibilities">
+                    <div class="resp-item">
+                      <div class="resp-bullet">1</div>
+                      <p class="resp-text">工业主机选型评估与整机硬件结构设计，涵盖CPU、内存、存储等核心部件选型及整机散热、接口布局设计</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">2</div>
+                      <p class="resp-text">RFID硬件设备选型适配与系统联调，完成多品牌RFID读写器的兼容性测试和性能调优</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">3</div>
+                      <p class="resp-text">后期运维体系搭建，规范收银终端硬件标准与运维流程，建立硬件故障分级处理机制</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">4</div>
+                      <p class="resp-text">完善零售终端软硬件一体化管控体系，保障门店收银业务硬件稳定可靠运行</p>
+                    </div>
+                  </div>
                   <div class="tech-tags">
                     <span class="tech-tag">Android IoT</span>
                     <span class="tech-tag">RFID</span>
@@ -1169,6 +1392,21 @@
                   <p class="project-description">
                     为应对CentOS7系统停服风险，在保障安全合规与成本可控前提下，主导完成2000+收银台系统向Windows10 IoT的平滑迁移。
                   </p>
+                  <div class="project-section-label"><i class="fas fa-tasks"></i> 主要职责</div>
+                  <div class="project-responsibilities">
+                    <div class="resp-item">
+                      <div class="resp-bullet">1</div>
+                      <p class="resp-text">迁移架构设计：基于PXE+云存储+Github构建混合云装机体系，设计支持亚太区13国POS系统的多版本适配方案，开发具备容错机制的PowerShell自动化脚本，集成POS中间件自动化部署功能</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">2</div>
+                      <p class="resp-text">效能提升实施：优化GCP/AWS跨云镜像同步策略，将单台装机时长从8小时压缩至3.5小时；建立调度指挥中心，引导实施小组精准控制区域并发装机量</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">3</div>
+                      <p class="resp-text">持续运维体系：基于Rundeck运维平台创建自动化故障处理工作流，实现工单处理远程操作减少80%；开发门店自助运维工具，推动三个月内工单量下降50%</p>
+                    </div>
+                  </div>
                   <div class="tech-tags">
                     <span class="tech-tag">系统迁移</span>
                     <span class="tech-tag">自动化部署</span>
@@ -1196,6 +1434,21 @@
                   <p class="project-description">
                     为满足中国个保法要求，带领项目组6人、供应商团队5人合作将法国SaaS版WorkspaceOne终端管理系统迁移至中国本地化部署，实现数据合规管控。
                   </p>
+                  <div class="project-section-label"><i class="fas fa-tasks"></i> 主要职责</div>
+                  <div class="project-responsibilities">
+                    <div class="resp-item">
+                      <div class="resp-bullet">1</div>
+                      <p class="resp-text">合规方案设计：调研原SaaS平台管理规范，结合中国隐私法规制定本地化终端管理策略，完成公有云与数据中心的SWOT分析，最终采用裸金属服务器+VCenter集群架构</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">2</div>
+                      <p class="resp-text">技术迁移实施：开发Windows/MacOS无接触迁移脚本（PowerShell/Shell），通过鲁棒性测试达成99%执行成功率，设计分阶段迁移策略，有效规避服务器负载和网络带宽瓶颈</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">3</div>
+                      <p class="resp-text">安全运维体系：部署防火墙及WAF构建安全防护体系，编写平台搭建手册、运维管理规范及SLA服务标准</p>
+                    </div>
+                  </div>
                   <div class="tech-tags">
                     <span class="tech-tag">MDM</span>
                     <span class="tech-tag">数据合规</span>
@@ -1217,7 +1470,7 @@
             </div>
           </div>
 
-          <div class="company-project-group">
+          <div class="company-project-group" id="group-huaxun">
             <div class="company-header">
               <div class="company-header-icon"><i class="fas fa-network-wired"></i></div>
               <div class="company-header-info">
@@ -1235,6 +1488,21 @@
                   <p class="project-description">
                     为上港集团设计符合ITIL 4标准的混合云一体化运维平台，整合分散的运维工具链，实现运维管理集中化。
                   </p>
+                  <div class="project-section-label"><i class="fas fa-tasks"></i> 主要职责</div>
+                  <div class="project-responsibilities">
+                    <div class="resp-item">
+                      <div class="resp-bullet">1</div>
+                      <p class="resp-text">深度需求挖掘与分析：全面调研客户现有设备（2000+节点）及管理工具，通过12场需求研讨会梳理显性/隐性需求，输出包含30+功能点的需求规格说明书，明确平台建设优先级</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">2</div>
+                      <p class="resp-text">架构设计与方案输出：基于混合云环境设计统一门户架构，集成Zabbix监控、Ansible自动化、ServiceNow ITSM等模块，制作Axure高保真原型及UML/数据流图等技术文档</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">3</div>
+                      <p class="resp-text">技术验证与投标支持：主导搭建POC环境，验证关键场景下多系统数据互通可行性，参与5轮技术答辩，针对性解决客户关于数据安全、性能瓶颈等疑虑</p>
+                    </div>
+                  </div>
                   <div class="tech-tags">
                     <span class="tech-tag">ITIL 4</span>
                     <span class="tech-tag">混合云</span>
@@ -1256,7 +1524,7 @@
             </div>
           </div>
 
-          <div class="company-project-group">
+          <div class="company-project-group" id="group-yaxin">
             <div class="company-header">
               <div class="company-header-icon"><i class="fas fa-shield-virus"></i></div>
               <div class="company-header-info">
@@ -1274,6 +1542,21 @@
                   <p class="project-description">
                     为解决200+外包人员手工管理效率低下问题，开发数字化管理系统实现全生命周期管理，集成OA系统实现审批流自动化。
                   </p>
+                  <div class="project-section-label"><i class="fas fa-tasks"></i> 主要职责</div>
+                  <div class="project-responsibilities">
+                    <div class="resp-item">
+                      <div class="resp-bullet">1</div>
+                      <p class="resp-text">需求分析与方案设计：调研大区助理及HR痛点，梳理入离职、考勤、薪酬等8大核心流程需求，设计包含员工档案、流程审批、数据看板三大功能模块的系统架构</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">2</div>
+                      <p class="resp-text">系统实施与流程优化：开发员工信息数字化平台，集成OA系统实现审批流自动化，构建员工画像分析模块，可视化展示团队结构与人员分布</p>
+                    </div>
+                    <div class="resp-item">
+                      <div class="resp-bullet">3</div>
+                      <p class="resp-text">变革管理与培训推广：制定系统操作手册，组织10+场次分区域培训，建立问题响应机制，确保系统平稳过渡</p>
+                    </div>
+                  </div>
                   <div class="tech-tags">
                     <span class="tech-tag">管理系统</span>
                     <span class="tech-tag">流程优化</span>
@@ -1294,11 +1577,21 @@
               </div>
             </div>
           </div>
+            </div>
+          </div>
         </div>
 
-        <!-- Certifications Tab -->
-        <div id="certifications" class="tab-pane">
-          <h2 class="section-title">认证资质</h2>
+        <!-- Education & Certifications Tab -->
+        <div id="education" class="tab-pane">
+          <h2 class="section-title">教育 & 认证</h2>
+          <div class="education-card">
+            <div class="education-icon"><i class="fas fa-university"></i></div>
+            <div class="education-info">
+              <h3>上海立信会计金融学院</h3>
+              <p class="education-major">计算机科学与技术（IT财经应用方向）</p>
+              <p class="education-detail">本科<span>|</span>2016.09 - 2020.06</p>
+            </div>
+          </div>
           <div class="cert-grid">
             <div class="cert-card">
               <div class="cert-icon">
@@ -1347,6 +1640,69 @@
                 <i class="fas fa-network-wired"></i>
               </div>
               <p class="cert-name">CCNP-R&S (思科认证网络专家)</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills Tab -->
+        <div id="skills" class="tab-pane">
+          <h2 class="section-title">专业技能</h2>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon">
+                  <i class="fas fa-cloud"></i>
+                </div>
+                <h3 class="skill-title">云平台与容器化</h3>
+              </div>
+              <ul class="skill-list">
+                <li>Kubernetes / Docker 容器编排与部署</li>
+                <li>VMware / 华为云私有云架构设计</li>
+                <li>混合云基础设施规划与管理</li>
+                <li>云原生应用架构设计与实施</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon">
+                  <i class="fas fa-server"></i>
+                </div>
+                <h3 class="skill-title">系统与网络</h3>
+              </div>
+              <ul class="skill-list">
+                <li>RedHat / CentOS / Windows Server 运维</li>
+                <li>基于 OSI / TCP/IP 的网络架构设计</li>
+                <li>企业级安全体系构建</li>
+                <li>高可用与负载均衡方案设计</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <h3 class="skill-title">开发与自动化</h3>
+              </div>
+              <ul class="skill-list">
+                <li>PowerShell / Shell / Python 脚本开发</li>
+                <li>Ansible / Puppet / Rundeck 自动化部署</li>
+                <li>Git 版本管理与 CI/CD 流程</li>
+                <li>基础设施即代码（IaC）实践</li>
+              </ul>
+            </div>
+            <div class="skill-card">
+              <div class="skill-header">
+                <div class="skill-icon">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3 class="skill-title">安全与合规</h3>
+              </div>
+              <ul class="skill-list">
+                <li>企业级安全标准实施</li>
+                <li>身份与访问管理（IAM）方案</li>
+                <li>隐私法规合规（中国 GDPR）</li>
+                <li>安全监控与应急响应</li>
+              </ul>
             </div>
           </div>
         </div>
