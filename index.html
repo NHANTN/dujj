@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="meta.name">杜菁菁 · 简历</title>
+  <meta name="description" content="杜菁菁 · 基础架构工程师 · 5+ 年企业基础设施与终端治理经验" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9A%A1%3C/text%3E%3C/svg%3E" />
+</head>
+<body>
+  <!-- ========== Navigation ========== -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-brand">
+        <span class="brand-mark">⚡</span>
+        <span class="brand-text" data-i18n="meta.name">杜菁菁</span>
+      </a>
+      <div class="nav-menu">
+        <a href="#about" data-i18n="nav.about">关于我</a>
+        <a href="#skills" data-i18n="nav.skills">技能</a>
+        <a href="#experience" data-i18n="nav.experience">工作经历</a>
+        <a href="#projects" data-i18n="nav.projects">项目经历</a>
+        <a href="#certs" data-i18n="nav.certs">认证</a>
+        <a href="#education" data-i18n="nav.education">教育</a>
+        <a href="#contact" data-i18n="nav.contact">联系</a>
+      </div>
+      <div class="nav-actions">
+        <div class="mode-toggle" id="modeToggle" role="tablist" aria-label="View mode">
+          <button class="mode-option" data-mode="arch" role="tab" aria-selected="true">架构</button>
+          <button class="mode-option" data-mode="pm" role="tab" aria-selected="false">项目</button>
+        </div>
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle theme" title="切换主题">
+          <svg class="theme-icon theme-icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+          <svg class="theme-icon theme-icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-active">中</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-inactive">EN</span>
+        </button>
+        <button class="nav-burger" id="navBurger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ========== Hero ========== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="grid-overlay"></div>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-greeting" data-i18n="hero.greeting">你好，我是</p>
+      <h1 class="hero-name">
+        <span data-i18n="meta.name">杜菁菁</span>
+        <span class="hero-cursor">|</span>
+      </h1>
+      <p class="hero-title">
+        <span class="title-bracket">&lt;</span>
+        <span data-i18n="meta.title">基础架构工程师</span>
+        <span class="title-bracket">/&gt;</span>
+      </p>
+      <p class="hero-tagline" data-i18n="hero.tagline">5+ 年企业基础设施与终端治理经验</p>
+      <p class="hero-subtagline" data-i18n="hero.subtagline">覆盖云原生 · 混合云 · 自动化运维 · 终端合规</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_contact">联系我</a>
+        <a href="#" id="downloadBtn" class="btn btn-ghost" data-i18n="hero.cta_download">下载 PDF 简历</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">2000<span class="stat-suffix">+</span></span>
+          <span class="stat-label">终端迁移</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">5000<span class="stat-suffix">+</span></span>
+          <span class="stat-label">云装机</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">13<span class="stat-suffix"></span></span>
+          <span class="stat-label">国家覆盖</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">7<span class="stat-suffix"></span></span>
+          <span class="stat-label">专业认证</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint">
+      <span>scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== About ========== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title" data-i18n="about.title">关于我</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-card">
+        <p class="about-text" data-i18n="about.summary">5+ 年企业基础设施与终端治理经验...</p>
+        <div class="about-tags">
+          <span class="tag">HCIE-Cloud</span>
+          <span class="tag">CKA</span>
+          <span class="tag">CISP</span>
+          <span class="tag">PMP</span>
+          <span class="tag">RHCE</span>
+          <span class="tag">CCNP-R&S</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Skills ========== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title" data-i18n="skills.title">核心技能</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid" id="skillsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========== Experience ========== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title" data-i18n="experience.title">工作经历</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline" id="experienceTimeline"></div>
+    </div>
+  </section>
+
+  <!-- ========== Projects ========== -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title" data-i18n="projects.title">项目经历</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid" id="projectsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========== Certs ========== -->
+  <section class="section" id="certs">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title" data-i18n="certs.title">认证资质</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid" id="certsGrid"></div>
+    </div>
+  </section>
+
+  <!-- ========== Education ========== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title" data-i18n="education.title">教育背景</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="education-card">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-content">
+          <h3 class="edu-school" data-i18n="education.school">上海立信会计金融学院</h3>
+          <p class="edu-degree" data-i18n="education.degree">本科 · 计算机科学与技术</p>
+          <p class="edu-period" data-i18n="education.period">2016.09 - 2020.06</p>
+          <p class="edu-courses" data-i18n="education.courses">主修课程：...</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Contact ========== -->
+  <section class="section section-contact" id="contact">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2 class="section-title" data-i18n="contact.title">联系方式</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="contact-subtitle" data-i18n="contact.subtitle">欢迎交流技术、机会或合作</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="tel:+8613761323537">
+          <div class="contact-icon">📞</div>
+          <div class="contact-label" data-i18n="contact.phone">电话</div>
+          <div class="contact-value" data-i18n="meta.phone">+86 137 6132 3537</div>
+        </a>
+        <a class="contact-card" href="mailto:duuujj@126.com">
+          <div class="contact-icon">✉️</div>
+          <div class="contact-label" data-i18n="contact.email">邮箱</div>
+          <div class="contact-value" data-i18n="meta.email">duuujj@126.com</div>
+        </a>
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <div class="contact-label" data-i18n="contact.location">所在地</div>
+          <div class="contact-value" data-i18n="meta.location">上海 · 中国</div>
+        </div>
+        <div class="contact-card">
+          <div class="contact-icon">🌐</div>
+          <div class="contact-label" data-i18n="contact.languages">语言</div>
+          <div class="contact-value" data-i18n="meta.languages">中文 · English</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== Footer ========== -->
+  <footer class="footer">
+    <div class="container">
+      <p data-i18n="footer.copyright">© 2026 杜菁菁</p>
+      <p class="footer-tech" data-i18n="footer.built_with">Built with HTML + CSS + Vanilla JS</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

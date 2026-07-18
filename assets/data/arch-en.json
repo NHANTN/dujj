@@ -1,0 +1,213 @@
+{
+  "meta": {
+    "name": "Jingjing Du",
+    "title": "Infrastructure Engineer",
+    "titleEn": "Infrastructure Engineer",
+    "location": "Shanghai, China",
+    "phone": "+86 137 6132 3537",
+    "email": "duuujj@126.com",
+    "languages": "Chinese (Native) · English (Professional working proficiency — daily use for vendor & cross-region stakeholder comms across 13 APAC markets)"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "certs": "Certs",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "tagline": "5+ years owning enterprise infrastructure & endpoint governance",
+    "subtagline": "Cloud-native · Hybrid cloud · Automation · Endpoint compliance",
+    "cta_contact": "Get in Touch",
+    "cta_download": "Download PDF Resume"
+  },
+  "about": {
+    "title": "About",
+    "summary": "Infrastructure engineer with 5+ years owning enterprise IT and endpoint governance at Decathlon APAC. Architected a hybrid-cloud POS migration covering 2,000+ terminals across 13 APAC markets and built a cloud imaging platform from scratch that now serves 5,000+ endpoints. Deep in Kubernetes, hybrid cloud, and IT automation. HCIE-Cloud, CKA, CISP, RHCE. I measure myself in uptime, MTTR, and cost per endpoint — not slide count."
+  },
+  "skills": {
+    "title": "Core Skills",
+    "categories": [
+      {
+        "name": "Containers & Orchestration",
+        "items": ["Kubernetes (CKA) — cluster planning, Helm, on-call troubleshooting", "Docker, container image hardening"]
+      },
+      {
+        "name": "Cloud & Architecture",
+        "items": ["AWS / GCP / Huawei Cloud / VMware vSphere", "Hybrid-cloud architecture, cross-cloud image sync, HA design"]
+      },
+      {
+        "name": "Operating Systems",
+        "items": ["Red Hat / CentOS (incl. EOL migration)", "Windows Server (incl. IoT POS edition)"]
+      },
+      {
+        "name": "Automation & IaC",
+        "items": ["PowerShell / Shell / Python scripting", "Ansible / Puppet / Rundeck orchestration"]
+      },
+      {
+        "name": "Endpoint & Mobility",
+        "items": ["MDM (Workspace ONE), PXE network imaging", "AD domain, device compliance policy"]
+      },
+      {
+        "name": "Observability & Security",
+        "items": ["Zabbix / ServiceNow ITSM", "Fortify SCA, WAF, firewall, full log analytics"]
+      },
+      {
+        "name": "Networking",
+        "items": ["OSI / TCP/IP architecture (CCNP-R&S)"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experience",
+    "items": [
+      {
+        "company": "Decathlon (Shanghai) Sports Co., Ltd.",
+        "role": "Infrastructure Engineer",
+        "period": "Aug 2022 – Present",
+        "location": "Shanghai",
+        "highlights": [
+          "Spearheaded infrastructure reliability across 300+ APAC stores and 2,000+ endpoints — built predictive alerting on top of performance baselines, hitting 99.9% uptime and cutting MTTR 40%",
+          "Authored 50+ technical docs and ran 20 internal training sessions, lifting regional first-line self-recovery from 30% to 75% — equivalent to ~3 FTE capacity reallocated to strategic work",
+          "Architected a from-scratch HA cloud imaging system supporting 5,000+ endpoints on PXE + cloud storage + Git — cut per-device imaging time from 2h to 30min (60% efficiency gain) and supported 13-country rapid deployment, saving an estimated ¥3M+ in labor annually",
+          "Led the end-to-end APAC migration of 2,000+ POS terminals from CentOS 7 to Windows 10 IoT across hybrid cloud (see project section) — zero business disruption",
+          "Built a mobile device management (MDM) platform from scratch, onboarding 1,000+ mobile endpoints with 98% compliance — selected bare-metal + VCenter cluster to meet China PIPL data-residency requirements"
+        ]
+      },
+      {
+        "company": "Shanghai Huaxun Network System Co., Ltd.",
+        "role": "Software Delivery Engineer",
+        "period": "Apr 2021 – Aug 2022",
+        "location": "Shanghai",
+        "highlights": [
+          "Owned IT infrastructure solution design for 10+ enterprise customers — architected the SIPG (Shanghai International Port Group) ITIL 4 hybrid-cloud O&M platform covering 2,000+ nodes, integrating Zabbix + Ansible + ServiceNow",
+          "Facilitated 12 requirements workshops surfacing 30+ functional points; shipped 5 standardized solution templates covering AWS and asset-management domains",
+          "Owned POC validation and delivery for finance and retail customers — closed 5 critical POCs (Pufa Credit Card, Bank of Yinzhou Ningbo, Starbucks AMS) at 100% technical acceptance",
+          "Built Shell/Python automation for deployment and monitoring with 100% on-site incident resolution; shipped 15+ platform manuals and training kits",
+          "Architected JD's 2,000+ endpoint desktop-cloud deployment on a HA design"
+        ]
+      },
+      {
+        "company": "AsiaInfo Technologies (Chengdu) Co., Ltd.",
+        "role": "IT System O&M Engineer (Intern → FTE)",
+        "period": "Jun 2020 – Apr 2021",
+        "location": "Chengdu",
+        "highlights": [
+          "Built the enterprise security program — deployed Fortify SCA and related products covering 2,000+ endpoints and 300+ servers, resolved 100+ security incidents; led the IAM zero-trust project to production",
+          "Contributed to the security posture platform with full log ingestion; designed ITIL-based Jira incident/change workflows that materially raised process standardization",
+          "Owned large-scale system migrations end-to-end: Confluence cross-DC scaling 200 → 2,000 users; Active Directory migration of 2,000+ accounts with zero disruption; full CDN migration cutting latency 30%",
+          "Built digital dashboard data APIs (Python ingestion + Spring Boot/Tomcat JSON) to power management dashboards; owned full lifecycle (requirements → deployment → training) of the OKR system and contractor management system — the latter built 0 to 1"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Projects",
+    "items": [
+      {
+        "name": "Decathlon APAC POS Terminal OS Migration",
+        "period": "Jan 2024 – Aug 2024",
+        "role": "Project Lead / Architect",
+        "background": "Migrated 2,000+ POS terminals from CentOS 7 to Windows 10 IoT across 13 APAC markets ahead of the CentOS 7 EOL — without a single business disruption.",
+        "tech": ["PXE", "GCP", "AWS", "PowerShell", "Rundeck", "Shell", "POS Middleware"],
+        "highlights": [
+          "Architected a hybrid-cloud imaging stack on PXE + cloud storage + Git with multi-version POS middleware adaptation",
+          "Built fault-tolerant PowerShell automation integrating POS middleware auto-deploy",
+          "Optimized GCP/AWS cross-cloud image sync — cut per-device imaging time from 8h to 3.5h (56% faster)",
+          "Built automated incident-response workflows on Rundeck — cut remote-ticket operations 80%",
+          "Shipped a store-level self-service O&M toolkit that drove ticket volume down 50% in 3 months"
+        ],
+        "result": "Migrated 2,000+ POS terminals with zero business disruption, 99.95% success rate, saving 1,500+ person-hours (~¥225K+ in engineering cost)"
+      },
+      {
+        "name": "Workspace ONE MDM China Localization",
+        "period": "Apr 2023 – Jan 2024",
+        "role": "Technical Lead",
+        "background": "Localized the French SaaS Workspace ONE endpoint management platform to comply with China PIPL. Led 6 in-house + 5 vendor engineers.",
+        "tech": ["Workspace ONE", "VCenter", "Bare Metal", "PowerShell", "Shell", "WAF", "Firewall"],
+        "highlights": [
+          "Ran SWOT across public cloud vs. on-prem DC; selected bare-metal + VCenter cluster architecture",
+          "Built Windows/macOS zero-touch migration scripts (PowerShell/Shell) with 99% execution success in robustness testing",
+          "Designed a phased migration strategy to dodge server-load and network-bandwidth bottlenecks",
+          "Hardened the platform with firewall + WAF; authored the build manual, O&M runbook, and SLA standards"
+        ],
+        "result": "100% endpoint migration with zero disruption, built a PIPL-compliant endpoint management system"
+      },
+      {
+        "name": "Decathlon China Android POS Hardware Innovation",
+        "period": "Aug 2025 – Dec 2025",
+        "role": "Project Lead",
+        "background": "Replaced the existing Windows POS hardware (high power draw, limited extensibility, unsustainable O&M cost) with a lightweight Android POS platform and a new in-store hardware standard.",
+        "tech": ["Android", "RFID", "Hardware Telemetry", "Endpoint Management", "Industrial Design", "Remote Diagnostics"],
+        "highlights": [
+          "Owned terminal hardware architecture decision: evaluated performance, stability, extensibility, TCO; selected an Android host platform aligned with long-term business evolution",
+          "Drove industrial design + system architecture co-engineering: orchestrated the vendor ID team on chassis layout, hardware integration, and peripheral interfacing",
+          "Extended the existing MDM with hardware telemetry, enabling remote diagnostics, proactive alerting, and a closed-loop O&M system",
+          "Spearheaded the RFID identification subsystem: owned reader module selection, frequency tuning, circuit adaptation; ran in-depth tag/sensitivity/anti-interference tests"
+        ],
+        "result": "Finalized and piloted the new-generation Android POS hardware: 40% hardware CapEx reduction (~¥2M+), 99.8% RFID identification success rate, 70% faster bulk-item read throughput, and predictive terminal-failure alerting — completing the APAC POS hardware standardization ecosystem"
+      },
+      {
+        "name": "SIPG IT Unified O&M Management Platform",
+        "period": "Nov 2021 – Mar 2022",
+        "role": "Pre-Sales Architect / Business Analyst",
+        "background": "Designed an ITIL 4-aligned hybrid-cloud O&M platform for Shanghai International Port Group, consolidating fragmented toolchains.",
+        "tech": ["Zabbix", "Ansible", "ServiceNow", "ITIL 4", "Axure", "UML"],
+        "highlights": [
+          "Surveyed 2,000+ nodes and ran 12 requirements workshops, delivering a 30+ functional-point SRS",
+          "Architected a unified portal integrating Zabbix monitoring + Ansible automation + ServiceNow ITSM",
+          "Built the POC environment and validated cross-system data interoperability"
+        ],
+        "result": "Closed Phase-1 ¥1M contract, laid groundwork for Phase-2 ¥3M expansion"
+      },
+      {
+        "name": "AsiaInfo Contractor Digital Management Platform",
+        "period": "Jun 2020 – Dec 2020",
+        "role": "Project Lead",
+        "background": "Replaced manual contractor management (200+ headcount, error-prone, no workflow closure) with a digital platform covering the full contractor lifecycle — delivered as a 0-to-1 build.",
+        "tech": ["OA Integration", "Spring Boot", "Tomcat", "Python", "Data Visualization", "Approval Workflow"],
+        "highlights": [
+          "Owned requirements and system architecture: interviewed regional assistants and HR, mapped 8 core processes (on/offboarding, attendance, payroll), defined three modules (employee records, approval workflow, data dashboard)",
+          "Built the platform with OA integration for end-to-end approval automation, plus an employee-profile module for team-structure and headcount visualization",
+          "Authored the SOP manual, ran 10+ regional training sessions, and stood up a tiered issue-response mechanism",
+          "Lifted on/offboarding efficiency 96%, cut HR management time 50%, and drove payroll error rate to zero"
+        ],
+        "result": "End-to-end digitalization of contractor management — 96% faster on/offboarding, 50% reduction in HR time, zero payroll errors; reusable methodology and platform assets rolled out across AsiaInfo regional HR"
+      }
+    ]
+  },
+  "certs": {
+    "title": "Certifications",
+    "items": [
+      { "name": "HCIE-Cloud Computing", "issuer": "Huawei", "desc": "Cloud Architecture Expert (globally recognized)" },
+      { "name": "CKA", "issuer": "CNCF / Linux Foundation", "desc": "Certified Kubernetes Administrator" },
+      { "name": "CISP", "issuer": "China Information Technology Security Evaluation Center", "desc": "Certified Information Security Professional" },
+      { "name": "HCIP-Security", "issuer": "Huawei", "desc": "Senior Security Engineer" },
+      { "name": "PMP", "issuer": "PMI", "desc": "Project Management Professional (globally recognized)" },
+      { "name": "RHCE", "issuer": "Red Hat", "desc": "Red Hat Certified Engineer" },
+      { "name": "CCNP-R&S", "issuer": "Cisco", "desc": "Cisco Certified Network Professional" }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "school": "Shanghai Lixin University of Accounting and Finance",
+    "degree": "B.Sc. in Computer Science & Technology (IT & Finance Applications)",
+    "period": "Sep 2016 – Jun 2020",
+    "courses": "Core courses: OOP, Operating Systems, Database Principles, Computer Networks, Software Engineering"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Open to infrastructure & engineering leadership roles, especially in international teams",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "languages": "Languages"
+  },
+  "footer": {
+    "copyright": "© 2026 Jingjing Du · Designed with Mavis",
+    "built_with": "Built with HTML + CSS + Vanilla JS"
+  }
+}

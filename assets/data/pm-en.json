@@ -1,0 +1,206 @@
+{
+  "meta": {
+    "name": "Jingjing Du",
+    "title": "Project Manager",
+    "titleEn": "Project Manager",
+    "location": "Shanghai, China",
+    "phone": "+86 137 6132 3537",
+    "email": "duuujj@126.com",
+    "languages": "Chinese (Native) · English (Professional working proficiency — daily use for vendor & cross-region stakeholder comms across 13 APAC markets)"
+  },
+  "nav": {
+    "about": "About",
+    "skills": "Capabilities",
+    "experience": "Experience",
+    "projects": "Case Studies",
+    "certs": "Certs",
+    "education": "Education",
+    "contact": "Contact"
+  },
+  "hero": {
+    "greeting": "Hi, I'm",
+    "tagline": "5+ years owning IT project delivery & pre-sales",
+    "subtagline": "PMP · Cross-functional leadership · Risk & stakeholder management",
+    "cta_contact": "Get in Touch",
+    "cta_download": "Download PDF Resume"
+  },
+  "about": {
+    "title": "About",
+    "summary": "Project manager with 5+ years in IT infrastructure delivery and pre-sales. Led 6+ cross-functional projects end-to-end, closed ¥1.3M+ in contracts. PMP-certified, fluent in ITIL 4, and a credible bridge between technical teams and business stakeholders. Track record of 0-to-1 platform builds, multi-region multi-team coordination, and disciplined risk and change management — backed by a strong technical foundation (HCIE-Cloud + CKA + CISP) so I can weigh in credibly on technical decisions."
+  },
+  "skills": {
+    "title": "Core Capabilities",
+    "categories": [
+      {
+        "name": "Project Management Methodology",
+        "items": ["PMP / PMI 9 knowledge areas", "Hybrid Agile + Waterfall delivery", "WBS, milestones, critical-path planning"]
+      },
+      {
+        "name": "Process & Governance",
+        "items": ["ITIL 4 incident / change / problem management", "SLA design, risk assessment, quality control", "Jira / Confluence as collaboration backbone"]
+      },
+      {
+        "name": "Requirements & Solutions",
+        "items": ["Customer research, SRS authoring", "Axure high-fidelity prototypes, UML, data flow", "Solution review with executive stakeholders"]
+      },
+      {
+        "name": "Cross-functional Leadership",
+        "items": ["6 in-house + 5 vendor team management", "13-country APAC coordination", "Stakeholder mapping & communication plans"]
+      },
+      {
+        "name": "Pre-Sales & Commercial",
+        "items": ["POC validation, 5-round technical defense", "Bidding & contract negotiation", "Commercial risk control"]
+      },
+      {
+        "name": "Technical Literacy (PM Lens)",
+        "items": ["Cloud architecture (HCIE-Cloud) — works fluidly with infra teams", "Containerization (CKA) — drives K8s adoption decisions", "InfoSec (CISP) — designs compliant solutions"]
+      }
+    ]
+  },
+  "experience": {
+    "title": "Project Management Experience",
+    "items": [
+      {
+        "company": "Decathlon (Shanghai) Sports Co., Ltd.",
+        "role": "Infrastructure Engineer / Project Lead",
+        "period": "Aug 2022 – Present",
+        "location": "Shanghai",
+        "highlights": [
+          "Spearheaded the APAC POS terminal OS migration (see case studies): led 6 in-house engineers + regional implementers; ran weekly reviews, risk boards, and stage-gate sign-offs; coordinated across 13 APAC markets; delivered with zero business disruption",
+          "Led the Workspace ONE MDM China localization (see case studies): managed 6 in-house + 5 vendor engineers with a clear RACI; aligned Legal, InfoSec, and Infrastructure on a PIPL-compliant solution and SLA standards",
+          "Owned the infrastructure reliability program for 300+ stores and 2,000+ endpoints: built a regional O&M SOP, ran 20 training sessions, shipped 50+ technical documents; lifted regional first-line self-recovery from 30% to 75% and cut MTTR 40%",
+          "Championed the 5,000+ endpoint cloud imaging rollout: coordinated across Infrastructure, Application, Business, and Regional functions; the standardized imaging system cut labor cost 50% and enabled 13-country rapid deployment"
+        ]
+      },
+      {
+        "company": "Shanghai Huaxun Network System Co., Ltd.",
+        "role": "Software Delivery Engineer / Pre-Sales",
+        "period": "Apr 2021 – Aug 2022",
+        "location": "Shanghai",
+        "highlights": [
+          "Owned pre-sales and solution design for 10+ enterprise customers — designed the SIPG (2,000+ nodes) ITIL 4 hybrid-cloud O&M platform, ran 12 requirements workshops surfacing 30+ functional points, delivered the SRS and 5 standardized solution templates",
+          "Closed pre-sales wins: drove the full pre-sales cycle on the McDonald's network monitoring project, closing a ¥300K contract; ran 5 POCs (Yinzhou Bank, Shanghai FSA) at 100% technical acceptance",
+          "Led end-to-end delivery for finance and retail customers — Pufa Credit Card, Starbucks AMS, JD's 2,000+ endpoint desktop cloud; resolved 50+ on-site incidents with high CSAT",
+          "Owned key-account program management: full-lifecycle requirements for Dun & Bradstreet Data Blocks; designed JD's 2,000+ endpoint desktop-cloud solution"
+        ]
+      },
+      {
+        "company": "AsiaInfo Technologies (Chengdu) Co., Ltd.",
+        "role": "IT System O&M Engineer / Project Lead (Intern → FTE)",
+        "period": "Jun 2020 – Apr 2021",
+        "location": "Chengdu",
+        "highlights": [
+          "Owned the enterprise security program: coordinated security controls across 2,000+ endpoints and 300+ servers; led the IAM zero-trust project to production; designed ITIL-based Jira incident/change workflows that materially raised process standardization",
+          "Ran a portfolio of 3 concurrent large-scale migrations — Confluence cross-DC (200 → 2,000 users), Active Directory (2,000+ accounts), full CDN migration (30% latency reduction) — zero-incident delivery across the lot",
+          "Owned the digital dashboard data API project: gathered business requirements, defined the KPI system, built the APIs; managed full lifecycle of OKR and enterprise cloud drive systems"
+        ]
+      }
+    ]
+  },
+  "projects": {
+    "title": "Case Studies",
+    "items": [
+      {
+        "name": "Decathlon China Android POS Hardware Innovation",
+        "period": "Aug 2025 – Dec 2025",
+        "role": "Project Lead",
+        "background": "Replaced the existing Windows POS hardware (high power draw, limited extensibility, unsustainable O&M cost) with a lightweight Android POS platform and a new in-store hardware standard.",
+        "tech": ["Android", "RFID", "Hardware Selection", "Endpoint Management", "Industrial Design", "Standardization"],
+        "highlights": [
+          "Scope: decomposed into 4 work packages (hardware selection / industrial design / O&M / RFID subsystem) with clear milestones and stage-gate deliverables",
+          "Stakeholder mgmt: coordinated local suppliers, business, and regional implementation teams; ran weekly reviews and joint design reviews",
+          "Risk mgmt: built a three-tier risk register for business continuity, hardware supply, and compliance; 100% closure on critical risks",
+          "Delivery: 40% hardware CapEx reduction (~¥2M+), 99.8% RFID identification success rate, predictive terminal-failure alerting"
+        ],
+        "result": "Finalized and piloted the new-generation Android POS hardware: 40% hardware CapEx reduction, 99.8% RFID identification success rate, 70% faster bulk-item read throughput, and predictive terminal-failure alerting — completing the APAC POS hardware standardization ecosystem"
+      },
+      {
+        "name": "Decathlon APAC POS Terminal OS Migration",
+        "period": "Jan 2024 – Aug 2024",
+        "role": "Project Lead",
+        "background": "Migrated 2,000+ POS terminals from CentOS 7 to Windows 10 IoT across 13 APAC markets ahead of the CentOS 7 EOL — without a single business disruption.",
+        "tech": ["Hybrid Cloud", "Rundeck", "POS Middleware", "Change Management"],
+        "highlights": [
+          "Scope: decomposed into 4 work packages (imaging / cross-cloud sync / automation / O&M)",
+          "Schedule: stood up a central dispatch, orchestrated regional concurrency, and completed 2,000+ terminals within 7 months",
+          "Risk: phased migration strategy avoided business peaks and compliance risk — zero business disruption",
+          "Communication: coordinated 13-country stakeholders via weekly reviews, risk boards, and stage-gate sign-offs",
+          "Quality: 99.95% success rate, 1,500+ person-hours saved"
+        ],
+        "result": "Migrated 2,000+ POS terminals with zero business disruption, 99.95% success rate, saving 1,500+ person-hours"
+      },
+      {
+        "name": "Workspace ONE MDM China Localization",
+        "period": "Apr 2023 – Jan 2024",
+        "role": "Technical Lead",
+        "background": "Localized the French SaaS Workspace ONE endpoint management platform to comply with China PIPL.",
+        "tech": ["PIPL Compliance", "Stakeholder Coordination", "Architecture Decision", "Change Management"],
+        "highlights": [
+          "Team mgmt: led 6 in-house + 5 vendor engineers with clear RACI and weekly delivery cadence",
+          "Stakeholder mgmt: aligned Legal, InfoSec, and Infrastructure on PIPL-compliant solution and SLA standards",
+          "Architecture decision: ran SWOT across public cloud vs. on-prem DC; selected bare-metal + VCenter cluster",
+          "Change mgmt: phased migration delivered 100% endpoint transition with zero disruption"
+        ],
+        "result": "100% endpoint migration with zero disruption, built a PIPL-compliant endpoint management system"
+      },
+      {
+        "name": "SIPG IT Unified O&M Management Platform",
+        "period": "Nov 2021 – Mar 2022",
+        "role": "Pre-Sales Architect / Business Analyst",
+        "background": "Designed an ITIL 4-aligned hybrid-cloud O&M platform for Shanghai International Port Group, consolidating fragmented toolchains.",
+        "tech": ["Requirements Management", "ITIL 4", "Solution Design", "Commercial Support"],
+        "highlights": [
+          "Requirements: ran 12 workshops, surfaced 30+ functional points, delivered the SRS",
+          "Architecture: designed a unified portal integrating Zabbix + Ansible + ServiceNow",
+          "Commercial: led POC validation and 5-round technical defense; resolved client data-security and performance concerns"
+        ],
+        "result": "Closed Phase-1 ¥1M contract, laid groundwork for Phase-2 ¥3M expansion"
+      },
+      {
+        "name": "AsiaInfo Contractor Digital Management Platform",
+        "period": "Jun 2020 – Dec 2020",
+        "role": "Project Lead",
+        "background": "Replaced manual contractor management (200+ headcount, error-prone, no workflow closure) with a digital platform covering the full contractor lifecycle — delivered as a 0-to-1 build.",
+        "tech": ["Requirements Research", "OA Integration", "Change Management", "Training Enablement"],
+        "highlights": [
+          "Requirements: interviewed regional assistants and HR; mapped 8 core processes (on/offboarding, attendance, payroll)",
+          "Solution design: defined three modules (employee records / approval workflow / data dashboard); integrated OA for end-to-end automation",
+          "Change mgmt: ran 10+ regional training sessions, stood up a tiered issue-response mechanism",
+          "Delivery: 96% faster on/offboarding, 50% reduction in HR time, zero payroll errors"
+        ],
+        "result": "End-to-end digitalization of contractor management — 96% faster on/offboarding, 50% reduction in HR time, zero payroll errors; reusable methodology and platform assets rolled out across AsiaInfo regional HR"
+      }
+    ]
+  },
+  "certs": {
+    "title": "Certifications",
+    "items": [
+      { "name": "PMP", "issuer": "PMI", "desc": "Project Management Professional (globally recognized)" },
+      { "name": "HCIE-Cloud Computing", "issuer": "Huawei", "desc": "Cloud Architecture Expert — bridges infra decisions" },
+      { "name": "CKA", "issuer": "CNCF / Linux Foundation", "desc": "Drives K8s adoption decisions" },
+      { "name": "CISP", "issuer": "China Information Technology Security Evaluation Center", "desc": "InfoSec — designs compliant solutions" },
+      { "name": "HCIP-Security", "issuer": "Huawei", "desc": "Senior Security Engineer" },
+      { "name": "RHCE", "issuer": "Red Hat", "desc": "Red Hat Certified Engineer" },
+      { "name": "CCNP-R&S", "issuer": "Cisco", "desc": "Cisco Certified Network Professional" }
+    ]
+  },
+  "education": {
+    "title": "Education",
+    "school": "Shanghai Lixin University of Accounting and Finance",
+    "degree": "B.Sc. in Computer Science & Technology (IT & Finance Applications)",
+    "period": "Sep 2016 – Jun 2020",
+    "courses": "Core courses: OOP, Operating Systems, Database Principles, Computer Networks, Software Engineering"
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Open to project/program management roles, especially in international teams",
+    "phone": "Phone",
+    "email": "Email",
+    "location": "Location",
+    "languages": "Languages"
+  },
+  "footer": {
+    "copyright": "© 2026 Jingjing Du · Designed with Mavis",
+    "built_with": "Built with HTML + CSS + Vanilla JS"
+  }
+}
